@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q_power_cut",
+    "text": "SMS: 'Your electricity will be disconnected tonight. Call 98xxx-xxxxx immediately to avoid a penalty.'",
+    "is_scam": true,
+    "explanation": "Threats of same-night disconnection plus a personal mobile number are classic scam signs. Check your bill on the provider's official app."
+  },
+  {
+    "id": "q_card_debit",
+    "text": "Bank app notification: 'Rs 1,500 was spent at a store with your card. Not you? Call the number printed on your card.'",
+    "is_scam": false,
+    "explanation": "This is a normal alert. It has no link, asks for no codes, and sends you to the number already on your card."
+  },
+  {
+    "id": "q_job_fee",
+    "text": "WhatsApp from an unknown number: 'We found your CV online. Pay Rs 2,500 registration to confirm your job.'",
+    "is_scam": true,
+    "explanation": "Real employers never charge you to hire you. Registration or training fees are the scam."
+  },
+  {
+    "id": "q_upi_pin",
+    "text": "A buyer asks for your UPI PIN so they can 'send' you the money for your old phone.",
+    "is_scam": true,
+    "explanation": "A UPI PIN is only needed to SEND money. To receive money, share your UPI ID, never your PIN."
+  },
+  {
+    "id": "q_hr_lunch",
+    "text": "Email from your company's HR (a known address) about a team lunch on Friday. No links, no attachments.",
+    "is_scam": false,
+    "explanation": "Known sender, ordinary content, nothing to click and nothing sensitive requested."
+  },
+  {
+    "id": "q_cyber_police",
+    "text": "Video caller in uniform: 'Your Aadhaar is linked to a crime. Stay on camera, tell nobody, and transfer money for verification.'",
+    "is_scam": true,
+    "explanation": "There is no 'digital arrest'. Real police do not demand money or secrecy on a video call."
+  },
+  {
+    "id": "q_otp_order",
+    "text": "SMS right after you place an order: 'Your OTP is 482910. Do not share it with anyone.'",
+    "is_scam": false,
+    "explanation": "It matches an action you just did. An OTP is only dangerous if you read it out to someone else."
+  },
+  {
+    "id": "q_virus_popup",
+    "text": "Website pop-up: 'Your phone has 7 viruses! Call this number now for free removal.'",
+    "is_scam": true,
+    "explanation": "Websites cannot scan your phone like that. The 'technician' will ask you to install a remote-access app."
+  },
+  {
+    "id": "q_cousin_number",
+    "text": "A message from your 'cousin's new number' asks for Rs 10,000 right now and says 'don't call, my voice is bad'.",
+    "is_scam": true,
+    "explanation": "Scammers avoid calls because you would notice the voice. Call the old number or ask family before sending anything."
+  },
+  {
+    "id": "q_rider_code",
+    "text": "Your regular delivery app: 'Your order is out for delivery. Share the delivery code only with the rider at your door.'",
+    "is_scam": false,
+    "explanation": "It comes from the app you used, matches an order you made, and the code is for the rider standing in front of you."
+  },
+  {
+    "id": "q_free_phone",
+    "text": "SMS: 'You won a free phone! Pay Rs 199 delivery charge to claim: free-phone-win.in'",
+    "is_scam": true,
+    "explanation": "You never entered a contest and a real prize does not ask for a fee. The payment page steals card details."
+  },
+  {
+    "id": "q_app_update",
+    "text": "The official app store shows an update for the bank app you already have installed.",
+    "is_scam": false,
+    "explanation": "Updates through the official app store are safe. Be careful only with updates pushed through links in messages."
+  },
+  {
+    "id": "q_guaranteed",
+    "text": "Telegram: 'Invest Rs 5,000 today and get Rs 25,000 in 7 days. Guaranteed returns!'",
+    "is_scam": true,
+    "explanation": "No genuine investment can guarantee returns, least of all 5x in a week."
+  },
+  {
+    "id": "q_scholarship",
+    "text": "You applied for a scholarship on the official portal. It emails a status update with no links and tells you to log in yourself.",
+    "is_scam": false,
+    "explanation": "You started it, there are no links, and it sends you to log in on your own. That is how genuine updates behave."
+  },
+  {
+    "id": "q_remote_app",
+    "text": "A caller wants you to install a remote-access app to 'fix' your internet connection.",
+    "is_scam": true,
+    "explanation": "Remote-access apps let them see your screen and approve payments. Never install one for a caller."
+  }
+]

@@ -1,0 +1,543 @@
+[
+  {
+    "id": "kyc_01",
+    "channel": "sms",
+    "sender": "VM-BUBANK",
+    "text": "Dear customer, your KYC expires today. Update now or your account will be blocked: bub-kyc-update.in",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -25000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Urgency: 'expires today'",
+      "Link to an unofficial website",
+      "Banks do not block accounts over SMS links"
+    ],
+    "explanation": "Banks never ask you to update KYC through an SMS link. The link opens a fake page that steals your login details and OTP.",
+    "real_fix": "Do not click. Call your bank on the number printed on your card or in its official app. Report at cybercrime.gov.in or call 1930.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "upi_collect_01",
+    "channel": "whatsapp",
+    "sender": "Rahul (marketplace buyer)",
+    "text": "Hi, I want to buy your sofa for Rs 8,000. I sent a payment request. Please enter your UPI PIN to receive the money.",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -8000,
+    "money_if_right": 0,
+    "red_flags": [
+      "You never need a PIN to RECEIVE money",
+      "A 'payment request' takes money out of your account",
+      "Buyer rushes you to finish the deal"
+    ],
+    "explanation": "Entering your UPI PIN always sends money, it never receives it. Scammers disguise a collect request as a payment.",
+    "real_fix": "Decline the request and never share your PIN. To receive money, just give your UPI ID or let the buyer scan your own QR code.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "task_job_01",
+    "channel": "whatsapp",
+    "sender": "+91 90000 00000",
+    "text": "Earn Rs 3,000 daily by liking YouTube videos! Work from home, no experience needed. Message JOIN on Telegram: @fastcashlikes",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -15000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Huge pay for a very easy task",
+      "Message from an unknown number",
+      "Pushes you to move to Telegram",
+      "Later asks for deposits to 'unlock' more tasks"
+    ],
+    "explanation": "Real employers do not pay thousands for liking videos. These task scams pay a few small amounts first, then demand bigger deposits you never get back.",
+    "real_fix": "Block and report the number. If you already paid, call 1930 and report at cybercrime.gov.in as soon as possible.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "customer_care_01",
+    "channel": "call",
+    "sender": "Unknown number",
+    "text": "Caller: 'Your electricity will be cut tonight because of a pending bill. Install our support app and pay Rs 10 through the link I send to fix it.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -40000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Threat of disconnection tonight",
+      "Asks you to install a screen-sharing app",
+      "Asks for a tiny payment through a link"
+    ],
+    "explanation": "The support app lets the caller see your screen, including OTPs and banking apps. The Rs 10 payment is only to get you to enter your PIN.",
+    "real_fix": "Hang up. Never install apps because a caller asks. Check dues only on your provider's official app or website. If money is lost, call 1930 immediately.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "qr_01",
+    "channel": "qr",
+    "sender": "Marketplace buyer",
+    "text": "Buyer: 'I am in a hurry. Scan this QR code and enter your PIN to receive your Rs 15,000 payment right now.'",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -15000,
+    "money_if_right": 0,
+    "red_flags": [
+      "You scan a QR code to PAY, not to receive",
+      "Buyer sends a QR instead of asking for your UPI ID",
+      "Pressure to finish quickly"
+    ],
+    "explanation": "Scanning someone else's QR code and entering your PIN sends money from your account. Receiving money never needs a PIN.",
+    "real_fix": "Refuse and end the chat. Share only your own UPI ID. Report the buyer's profile on the marketplace.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lottery_01",
+    "channel": "sms",
+    "sender": "LK-JACKPT",
+    "text": "Congratulations! You won Rs 25,00,000 in the Lucky Quiz Jackpot. Pay a processing fee of Rs 5,000 to claim: claim-prize-jackpot.in",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -5000,
+    "money_if_right": 500,
+    "red_flags": [
+      "You never entered this contest",
+      "A fee to receive a prize",
+      "Unofficial link"
+    ],
+    "explanation": "Real prizes never ask you to pay first. The fee is the whole scam, and more 'taxes and charges' follow after you pay.",
+    "real_fix": "Delete the message and block the sender. Report it at cybercrime.gov.in. Never pay to receive money.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "digital_arrest_01",
+    "channel": "call",
+    "sender": "Video call: 'CBI Officer'",
+    "text": "Caller in uniform: 'A parcel in your name contains drugs. You are under digital arrest. Stay on camera, tell nobody, and transfer your savings to a safe account for verification.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -30000,
+    "money_if_right": 1000,
+    "red_flags": [
+      "No agency arrests people over a video call",
+      "Orders you to stay on camera and tell no one",
+      "'Safe account' transfers are always theft"
+    ],
+    "explanation": "'Digital arrest' does not exist in law. Scammers use fear and isolation so you do not stop to check with anyone.",
+    "real_fix": "Hang up and tell someone you trust. Police and CBI never ask for money transfers. Report at cybercrime.gov.in or call 1930.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "fd_01",
+    "channel": "email",
+    "sender": "Bharat Union Bank (official app notification)",
+    "text": "Your fixed deposit of Rs 20,000 has matured and Rs 1,450 interest has been credited. To renew, open the bank's app or visit your branch. We will never ask for your OTP or PIN.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 1450,
+    "red_flags": [
+      "No link and no request for OTP or PIN",
+      "Tells you to use the official app or branch",
+      "Matches a deposit you actually made"
+    ],
+    "explanation": "This is genuine: it matches a real deposit, asks for nothing sensitive and sends you to official channels only. Being safe does not mean ignoring everything.",
+    "real_fix": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": "job_01",
+    "channel": "email",
+    "sender": "hr@brightlabs-careers.in",
+    "text": "Thank you for applying last week through our careers page. Please attend an interview on Monday, 11 AM at our office (address in the careers page). Bring your ID. No fees are involved in our hiring process.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 2000,
+    "red_flags": [
+      "You applied first, they did not cold-contact you",
+      "No fee or deposit asked",
+      "Real office address you can verify"
+    ],
+    "explanation": "This is genuine: you applied, they invite you to a real office, and nobody asks for money. A job opportunity like this is worth taking.",
+    "real_fix": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "family_01",
+    "channel": "whatsapp",
+    "sender": "Mom (saved contact)",
+    "text": "Beta, I sent you Rs 2,000 for groceries. Please check your account when you can. Love you.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 2000,
+    "red_flags": [
+      "A contact you saved and know",
+      "No link, OTP or PIN requested",
+      "Matches how your family really talks to you"
+    ],
+    "explanation": "This is genuine: a known contact, no link, no PIN, and you simply check your own account. Compare this with 'new number' messages that ask you to act fast.",
+    "real_fix": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": "otp_call_01",
+    "channel": "call",
+    "sender": "Unknown number",
+    "text": "Caller: 'I am calling from your bank to upgrade your credit card limit. A 6-digit code will arrive on your phone. Please read it out so I can complete the upgrade.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -20000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Asks you to read out an OTP",
+      "Unexpected call about a 'free upgrade'",
+      "Banks never ask for OTPs on a call"
+    ],
+    "explanation": "An OTP is the key to approve a payment. The caller already has your card details and needs only your code to take the money.",
+    "real_fix": "Hang up and never share an OTP with anyone. Call the number printed on the back of your card to check. If you shared one, call your bank and 1930 immediately.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "invest_group_01",
+    "channel": "whatsapp",
+    "sender": "Stock Tips VIP (group you were added to)",
+    "text": "Members posting screenshots: 'Made Rs 90,000 in 3 days!' Admin: 'Last 5 seats for our private trading pool. Send Rs 10,000 today to join. Guaranteed 300 percent returns.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -20000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Guaranteed returns do not exist",
+      "Added to a group without asking",
+      "Profit screenshots are easy to fake and the 'members' are the scammers"
+    ],
+    "explanation": "Almost everyone in the group is part of the scam, posting fake wins. You pay to join, then are asked for more 'fees' before you can withdraw.",
+    "real_fix": "Leave and report the group. Invest only through SEBI-registered brokers and apps. If you paid, call 1930 and report at cybercrime.gov.in.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fake_care_01",
+    "channel": "ad",
+    "sender": "Top search result (sponsored)",
+    "text": "You search for a refund helpline for a food order. The top ad says 'Official Refund Helpline 1800-000-0000'. The agent who picks up asks you to share the 6-digit code you just received.",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -12000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Helpline number came from a search ad, not the official app",
+      "Agent asks for a code sent to your phone",
+      "Real support never needs your OTP to issue a refund"
+    ],
+    "explanation": "Anyone can buy a search ad and show a fake support number. Scammers wait for people searching for help, then collect the OTP.",
+    "real_fix": "Get support numbers only from the official app or website you typed in yourself. Never share a code with an agent. Report at cybercrime.gov.in or call 1930.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "loan_app_01",
+    "channel": "sms",
+    "sender": "QK-LOANAP",
+    "text": "Instant loan of Rs 50,000 in 5 minutes. No documents needed! Install our app: quickcash-loans.in and allow access to your contacts and photos.",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -8000,
+    "money_if_right": 500,
+    "red_flags": [
+      "No documents or checks at all",
+      "App wants your contacts and photos",
+      "Link to install an app outside the official store"
+    ],
+    "explanation": "Illegal loan apps copy your contacts and photos, then charge huge hidden fees and threaten you by messaging your friends.",
+    "real_fix": "Borrow only from banks and lenders listed on the RBI website. If you are being harassed, report at cybercrime.gov.in or call 1930.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "sim_swap_01",
+    "channel": "call",
+    "sender": "Automated call",
+    "text": "Recording: 'Your SIM will be deactivated in 2 hours because KYC is incomplete. Press 1 to speak to an executive and keep your number active.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -35000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Threat to deactivate your number within hours",
+      "Robot call asking you to press a key",
+      "The executive will ask for your SIM number and OTP"
+    ],
+    "explanation": "This is the start of a SIM-swap: they take over your number, then every bank OTP goes to them instead of you.",
+    "real_fix": "Hang up. Visit your mobile operator's store or official app to check KYC. If your signal suddenly drops for no reason, call your operator and bank at once.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "courier_01",
+    "channel": "sms",
+    "sender": "DL-PARCEL",
+    "text": "Your parcel is held at customs. Pay a release fee of Rs 49 within 24 hours: parcel-release-fee.in",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -6000,
+    "money_if_right": 0,
+    "red_flags": [
+      "You are not expecting any parcel",
+      "Tiny fee through an unofficial link",
+      "Deadline to pressure you"
+    ],
+    "explanation": "The Rs 49 payment page steals your card details. The real money is taken afterwards, using the details you typed in.",
+    "real_fix": "Ignore it. Track parcels only on the courier's official app or the shopping app you ordered from.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "relative_01",
+    "channel": "whatsapp",
+    "sender": "+91 80000 11111 (new number)",
+    "text": "'Hi beta, it's Uncle Raj. My phone is broken so I'm using a friend's number. I'm stuck at a hospital and need Rs 20,000 urgently. Please don't tell your parents.'",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -20000,
+    "money_if_right": 0,
+    "red_flags": [
+      "New number claiming to be someone you know",
+      "Money needed urgently",
+      "Asks you to keep it secret"
+    ],
+    "explanation": "Scammers copy a relative's name and photo from social media. Secrecy and urgency stop you from checking.",
+    "real_fix": "Call the person on the number you already have, or ask a family member. Do not send money until you confirm. Report the number on WhatsApp.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "phish_email_01",
+    "channel": "email",
+    "sender": "security@mail-secure-login.in",
+    "text": "Security alert: unusual login detected on your email account. Verify your password within 24 hours or your account will be closed: mail-secure-login.in/verify",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -10000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Sender domain is not your email provider's",
+      "Asks you to type your password into a link",
+      "24-hour deadline"
+    ],
+    "explanation": "The link opens a fake login page that records your password. With your email they can reset the passwords of your bank and shopping accounts.",
+    "real_fix": "Do not click. Open your email provider's app yourself and check security settings. Turn on two-step verification.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "cashback_01",
+    "channel": "sms",
+    "sender": "CB-OFFERS",
+    "text": "Congratulations! You are eligible for Rs 500 cashback. Tap to claim and enter your UPI PIN to confirm eligibility: cashback-claim-now.in",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -9000,
+    "money_if_right": 0,
+    "red_flags": [
+      "Asks for your UPI PIN",
+      "Offer from nowhere",
+      "Unofficial link"
+    ],
+    "explanation": "A UPI PIN is only for sending money. 'Confirming eligibility' with it authorises a payment out of your account.",
+    "real_fix": "Delete it. Real cashback appears on its own inside your payment app and never asks for your PIN.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "tax_refund_01",
+    "channel": "email",
+    "sender": "refund@incometax-refunds.in",
+    "text": "Your tax refund of Rs 18,540 is approved. Submit your bank and card details at refund-incometax-portal.in within 48 hours to receive it.",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -22000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Government offices do not email links asking for card details",
+      "Look-alike website address",
+      "Short deadline"
+    ],
+    "explanation": "Refunds go straight into the bank account already on file. Nobody needs your card number to send you money.",
+    "real_fix": "Check refund status only by typing the official tax website yourself. Report phishing emails at cybercrime.gov.in.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "advance_01",
+    "channel": "whatsapp",
+    "sender": "Seller on a marketplace",
+    "text": "'I am being transferred abroad so I am selling my bike very cheap at Rs 20,000. Pay Rs 5,000 advance for courier and I will send it today.'",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -5000,
+    "money_if_right": 0,
+    "red_flags": [
+      "Price far below the real value",
+      "Asks for an advance before you see the item",
+      "Sad story to hurry you"
+    ],
+    "explanation": "The bike does not exist. Once the advance is paid, the seller asks for more 'courier charges' and then disappears.",
+    "real_fix": "Meet in person, inspect the item and pay only on handover. Report the listing on the marketplace.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "giveaway_01",
+    "channel": "ad",
+    "sender": "Social media page",
+    "text": "'Phone Giveaway! Share this post with 10 groups and pay Rs 99 shipping to win the latest phone. Only 3 hours left!'",
+    "is_scam": true,
+    "right_action": "ignore",
+    "money_if_wrong": -2000,
+    "money_if_right": 0,
+    "red_flags": [
+      "Pay a fee to win a free prize",
+      "Share-with-10-groups chain",
+      "Countdown to rush you"
+    ],
+    "explanation": "The shipping page collects your card details, and your shares spread the scam to your friends.",
+    "real_fix": "Skip it. Check giveaways only on a brand's own verified page, and never pay to win.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "insurance_01",
+    "channel": "call",
+    "sender": "Unknown number",
+    "text": "Caller: 'Your life insurance policy has a bonus of Rs 2,00,000 waiting. Pay Rs 15,000 GST today to release it. This offer ends tonight.'",
+    "is_scam": true,
+    "right_action": "report",
+    "money_if_wrong": -15000,
+    "money_if_right": 500,
+    "red_flags": [
+      "Pay a fee to receive your own money",
+      "Offer expires tonight",
+      "Caller knows a few details but not your policy number"
+    ],
+    "explanation": "Real payouts never need an upfront 'tax'. The caller gets your trust with a few facts bought from data leaks.",
+    "real_fix": "Hang up. Check policy status by calling your insurer's official number or app. Report at cybercrime.gov.in or 1930.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "placement_01",
+    "channel": "email",
+    "sender": "placements@your-college.example (official college address)",
+    "text": "Campus placement drive on Tuesday. Please register on the college portal you already use before Monday. Registration is free and no payment is required.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 2500,
+    "red_flags": [
+      "From your own college's known address",
+      "Sends you to a portal you already use",
+      "No fee"
+    ],
+    "explanation": "This is genuine: a trusted sender, a familiar portal and no money asked. Ignoring it would mean missing a real job chance.",
+    "real_fix": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": "refund_01",
+    "channel": "sms",
+    "sender": "Shopping app (official sender)",
+    "text": "Your return for order #5521 has been picked up. A refund of Rs 1,299 will reach your original payment method in 5 to 7 days. No action needed.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 1299,
+    "red_flags": [
+      "Matches a return you actually requested",
+      "No link, OTP or card details asked",
+      "Refund goes to the original payment method"
+    ],
+    "explanation": "This is genuine: you asked for the return, nothing is asked of you, and the money goes back to where it came from.",
+    "real_fix": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bill_01",
+    "channel": "sms",
+    "sender": "Electricity board (official app)",
+    "text": "Your bill of Rs 1,200 is due on the 5th. Auto-pay is on for your account. Pay only through the official app. Paying on time saves you a late fee.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 300,
+    "red_flags": [
+      "Matches a bill and account you really have",
+      "Tells you to use only the official app",
+      "No threat or disconnection warning"
+    ],
+    "explanation": "This is genuine: a calm reminder with no threat, no link and no personal details requested. Contrast it with fake 'pay tonight or lose power' messages.",
+    "real_fix": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "friend_01",
+    "channel": "whatsapp",
+    "sender": "Arjun (saved contact)",
+    "text": "Bro, movie night is at 8. Can you bring the snacks? I'll send you my share, Rs 300, on UPI after the show.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 300,
+    "red_flags": [
+      "A friend you know, on his saved number",
+      "He will SEND you money, nobody asks for yours",
+      "Normal, relaxed conversation"
+    ],
+    "explanation": "This is genuine: a familiar person on a familiar number who is offering to pay you back later, not asking for a PIN or a transfer.",
+    "real_fix": "",
+    "difficulty": "easy"
+  },
+  {
+    "id": "scholarship_01",
+    "channel": "email",
+    "sender": "Scholarship cell (official college address)",
+    "text": "Your scholarship of Rs 3,000 is approved. Please collect your letter from the accounts office with your college ID. The amount will be credited to your bank account.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 3000,
+    "red_flags": [
+      "You applied and know about it",
+      "Collect in person at a real office",
+      "No fee and no bank details requested"
+    ],
+    "explanation": "This is genuine: you applied, you collect it in person, and no money or secret codes are demanded.",
+    "real_fix": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "freelance_01",
+    "channel": "email",
+    "sender": "Client on a freelance platform",
+    "text": "We would like to hire you for a Rs 4,000 logo job you pitched for. Payment is held in the platform's escrow and released when you deliver. Please send the draft here.",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 4000,
+    "red_flags": [
+      "You pitched for the job first",
+      "Payment is protected by the platform's escrow",
+      "No request to pay anything or move off-platform"
+    ],
+    "explanation": "This is genuine: you pitched, the platform holds the money safely, and the work stays on the platform. Fake clients push you off-platform and ask you to pay first.",
+    "real_fix": "",
+    "difficulty": "hard"
+  },
+  {
+    "id": "shop_job_01",
+    "channel": "call",
+    "sender": "Mr. Sharma (local stationery shop owner you know)",
+    "text": "Caller: 'Beta, I need help at the counter on weekends. Rs 1,500 per day, cash at the end of each day. Come to the shop and meet me, you know where it is.'",
+    "is_scam": false,
+    "right_action": "accept",
+    "money_if_wrong": 0,
+    "money_if_right": 1500,
+    "red_flags": [
+      "Someone you know, at a place you can visit",
+      "Paid in person at the end of the day",
+      "No fee or deposit"
+    ],
+    "explanation": "This is genuine: a known person, a real shop and fair pay with no upfront money. Real opportunities exist offline too.",
+    "real_fix": "",
+    "difficulty": "medium"
+  }
+]

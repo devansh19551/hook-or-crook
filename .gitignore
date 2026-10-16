@@ -1,0 +1,19 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Exports and builds (share APKs through GitHub Releases, not the repo)
+*.apk
+*.aab
+*.idsig
+build/
+
+# Signing secrets - NEVER commit these
+*.keystore
+*.jks
+export_credentials.cfg
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.tmp

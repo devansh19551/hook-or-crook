@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bike",
+    "name": "Bike",
+    "cost": 90000,
+    "blurb": "Your first set of wheels."
+  },
+  {
+    "id": "car",
+    "name": "Car",
+    "cost": 200000,
+    "blurb": "A hatchback of your own."
+  },
+  {
+    "id": "house",
+    "name": "House",
+    "cost": 500000,
+    "blurb": "Your own home. Only the sharpest players get here."
+  }
+]
